@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.db
+*.db-*
+fetch.log
+analysis.txt
+static.txt
