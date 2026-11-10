@@ -69,7 +69,7 @@ def main():
         for cex, name in CEXS.items():
             df = pd.concat([hl, hourly(cex, coin), px], axis=1, keys=["hl", "cex", "px"]).dropna()
             gap = (df.hl - df.cex) * YEAR_H * 100
-            when = pd.to_datetime(gap.index * HOUR, unit="ms")
+            when = pd.to_datetime(gap.index.astype("int64") * HOUR, unit="ms")
             day = gap.groupby(when.floor("D")).agg(["mean", "count"])
             daily = day["mean"][day["count"] == 24]
             lo, hi = ci(daily)

@@ -41,10 +41,10 @@ What I take from it:
    margin while the long leg's grows. In my hourly simulation 2x per leg needed between 7 (BTC) and 33 (SOL)
    collateral moves in 3.5 years. At 5x per leg, SOL and HYPE on Bybit get liquidated even on hourly closes,
    which hide the intra-hour wicks.
-5. **At 2x per leg the return on capital is about the gap itself.** In 2026 that is 1 to 4% a year, at or below
+5. **At 2x per leg the return on capital is about the gap itself.** In 2026 that is 1 to 5% a year (BTC 2.3, ETH 3.8, SOL 1.2, HYPE 4.7), around
    what short US Treasury bills paid over the same months (3.6 to 3.8% in the readings I found). Most of
    the opportunity, if there was one, was in 2023 and 2024.
-6. **The gap is wider in volatile weeks for BTC and SOL** (SOL: 8% a year in the calmest third of weeks, 19% in
+6. **The gap is wider in volatile weeks for BTC and SOL** (SOL: 8% a year in the calmest third of 8-hour blocks, 19% in
    the most volatile third), not for ETH. So part of the gap pays for holding the trade when margin risk is
    highest.
 7. **HYPE behaves differently.** Against Binance the gap is smaller and fades within hours, and trading the

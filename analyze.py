@@ -110,13 +110,13 @@ def main():
             gap = both.hl - both.cex
             a = gap * YEAR_H * 100
             years = len(both) / YEAR_H
-            span = f"{pd.to_datetime(both.index[0] * HOUR, unit='ms'):%Y-%m-%d}..{pd.to_datetime(both.index[-1] * HOUR, unit='ms'):%Y-%m-%d}"
+            span = f"{pd.to_datetime(int(both.index[0]) * HOUR, unit='ms'):%Y-%m-%d}..{pd.to_datetime(int(both.index[-1]) * HOUR, unit='ms'):%Y-%m-%d}"
             dist.append(dict(coin=coin, cex=name, span=span, hl_apr=both.hl.mean() * YEAR_H * 100,
                              cex_apr=both.cex.mean() * YEAR_H * 100, gap_mean=a.mean(), gap_med=a.median(),
                              p05=a.quantile(.05), p95=a.quantile(.95), abs_mean=a.abs().mean(),
                              hl_pos=(a > 0).mean() * 100, near_zero=(a.abs() < 1).mean() * 100))
 
-            yearly[f"{coin} {name}"] = a.groupby(pd.to_datetime(a.index * HOUR, unit="ms").year).mean()
+            yearly[f"{coin} {name}"] = a.groupby(pd.to_datetime(a.index.astype("int64") * HOUR, unit="ms").year).mean()
 
             b = blocks(gap)
             ab = b * YEAR_H * 100
