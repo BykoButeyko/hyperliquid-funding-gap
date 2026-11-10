@@ -6,7 +6,7 @@ does a gap last, and how much of it is left once you pay to hold both sides?
 This is descriptive research. It does not place orders or recommend trades.
 
 Write-up: [bykobuteyko.com/research/hyperliquid-funding](https://bykobuteyko.com/research/hyperliquid-funding/).
-Related: [Hyperliquid whale positioning](https://github.com/BykoButeyko/hyperliquid-whale-positioning), [how much of the bitcoin ETF bid is a basis trade](https://bykobuteyko.com/research/bitcoin-etf-basis/).
+Related: [Hyperliquid whale positioning](https://bykobuteyko.com/research/hyperliquid-whales/), [how much of the bitcoin ETF bid is a basis trade](https://bykobuteyko.com/research/bitcoin-etf-basis/).
 
 ## Findings
 
